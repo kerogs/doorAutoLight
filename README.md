@@ -16,8 +16,11 @@ Version of the code that works with a servo motor that turns to press a button.
 
 ### Variable to change
 ```cpp
-int maxDistance = 10;
-int durationAction = 3000
+// Distance and timing settings (modifiable)
+int maxDistance = 10;      // Maximum detection distance in cm
+int durationAction = 8000; // The time that elapses before the Servo presses again. (ms)
+int delayServoBetweenAction = 1000; // Delay between servo movement and return to initial position. (ms)
+int servoAngleMax = 180;  // Servo stop angle (180° max) (deg)
 ```
 
 ### Schema
